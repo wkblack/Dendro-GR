@@ -8,7 +8,9 @@ It rebuilds tools, not deleted simulation checkpoints or historical output data.
 
 ## Quick start
 
-Unzip this archive, open a terminal in its folder, and inspect the plan:
+Unzip this archive, open a terminal in its folder, and inspect the plan. The ZIP
+includes `SHA256SUMS` for optional integrity verification with
+`sha256sum -c SHA256SUMS` (the repository copy may not include that generated file):
 
 ```bash
 bash setup.sh --plan --prefix "$HOME/research-recovery"
@@ -176,3 +178,7 @@ local snapshot. No additional patch is applied to this fallback. The full ZIP
 is preferable because it also preserves the original history and other branches.
 
 Verified source: https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/cloud-restoration
+
+All 16 dated pynwave backup branches were also verified against their local
+source trees. `pynwave-remote-branches.json` maps the original commits, remote
+commits, tree hashes, and direct URLs. Fork main was left unchanged.

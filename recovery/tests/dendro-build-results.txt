@@ -1,0 +1,442 @@
++ gcc -dumpversion
++ mpirun --version
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/cmake-data_3.31.6-2_all.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/cmake_3.31.6-2_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libblas-dev_3.12.1-6_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libgfortran-14-dev_14.2.0-19_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libgfortran5_14.2.0-19_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libgsl-dev_2.8+dfsg-5_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libgsl28_2.8+dfsg-5_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libgslcblas0_2.8+dfsg-5_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/liblapack-dev_3.12.1-6_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libopenmpi-dev_5.0.7-1_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/librhash1_1.4.5-1_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/packages/libuv1t64_1.50.0-2_amd64.deb <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root
+Cloning into '<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR'...
+HEAD is now at d00a675 feat(bssn): optional explicit second derivatives on physical-boundary blocks (BSSN_DERIV_BDY_EXPLICIT_SECOND)
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR rev-parse HEAD
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR remote get-url origin
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR diff --binary HEAD
+Cloning into '<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01'...
+done.
+HEAD is now at 0e6198b Merge pull request #4 from dfvankomen/fix/kimbyu17-fail-loudly
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01 rev-parse HEAD
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01 remote get-url origin
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01 diff --binary HEAD
+Cloning into '<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/toml11'...
+done.
+HEAD is now at be08ba2 doc: update versions in docs
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/toml11 rev-parse HEAD
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/toml11 remote get-url origin
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/toml11 diff --binary HEAD
+Cloning into '<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/spdlog'...
+done.
+HEAD is now at 27cb4c76 Added mdc example to readme
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/spdlog rev-parse HEAD
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/spdlog remote get-url origin
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/spdlog diff --binary HEAD
+Cloning into '<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm'...
+HEAD is now at 0c2fae6 Format CMake and honor `LIBXSMM_FORTRAN=OFF` (#1113)
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm rev-parse HEAD
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm remote get-url origin
++ git -C <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm diff --binary HEAD
++ cmake -S <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR -B <isolated-test-workspace>/recovery-dendro-test-v2-20261109/build/dendro -DCMAKE_BUILD_TYPE=Release -DWITH_CUDA=OFF -DDENDRO_ENABLE_HDF5=OFF -DBSSN_USE_6TH_ORDER_DERIVS=ON -DBSSN_USE_4TH_ORDER_DERIVS=OFF -DBSSN_USE_8TH_ORDER_DERIVS=OFF -DBUILD_TESTING=OFF -DTOML11_BUILD_TESTS=OFF -DCPU_ARCH=native -DDENDRO_dendrolib_DIR=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01 -DFETCHCONTENT_SOURCE_DIR_TOML11=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/toml11 -DFETCHCONTENT_SOURCE_DIR_SPDLOG=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/spdlog -DFETCHCONTENT_SOURCE_DIR_XSMM=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_Fortran_COMPILER=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/bin/gfortran -DCMAKE_PREFIX_PATH=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root/usr -DGSL_ROOT_DIR=<isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root/usr -DBLAS_LIBRARIES=/usr/lib/x86_64-linux-gnu/libblas.so.3 -DLAPACK_LIBRARIES=/usr/lib/x86_64-linux-gnu/liblapack.so.3 -DMPI_mpi_LIBRARY=/usr/lib/x86_64-linux-gnu/libmpi.so.40 -DMPI_mpi_mpifh_LIBRARY=/usr/lib/x86_64-linux-gnu/libmpi_mpifh.so.40 -DMPI_mpi_usempif08_LIBRARY=/usr/lib/x86_64-linux-gnu/libmpi_usempif08.so.40 -DMPI_mpi_usempi_ignore_tkr_LIBRARY=/usr/lib/x86_64-linux-gnu/libmpi_usempi_ignore_tkr.so.40
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The Fortran compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/bin/gfortran - skipped
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP_Fortran: -fopenmp (found version "4.5")
+-- Found OpenMP: TRUE (found version "4.5")
+-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so.40 (found version "3.1")
+-- Found MPI_CXX: /usr/lib/x86_64-linux-gnu/libmpi.so.40 (found version "3.1")
+-- Found MPI_Fortran: /usr/lib/x86_64-linux-gnu/libmpi_usempif08.so.40 (found version "3.1")
+-- Found MPI: TRUE (found version "3.1")
+-- Found GSL: <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root/usr/include (found version "2.8")
+-- Performing Test HAVE_ARCH_march_native
+-- Performing Test HAVE_ARCH_march_native - Success
+-- Build Target Architecture: native
+-- Compiler Flags: -march=native
+-- Setting up adding Git Information directly to compile options, header file should be in <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR/cmake-modules
+CMake Deprecation Warning at <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/toml11/CMakeLists.txt:25 (cmake_policy):
+  The OLD behavior for policy CMP0127 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Performing Test TOML11_COMPILER_SUPPORTS_WALL
+-- Performing Test TOML11_COMPILER_SUPPORTS_WALL - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WEXTRA
+-- Performing Test TOML11_COMPILER_SUPPORTS_WEXTRA - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WPEDANTIC
+-- Performing Test TOML11_COMPILER_SUPPORTS_WPEDANTIC - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WERROR
+-- Performing Test TOML11_COMPILER_SUPPORTS_WERROR - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WSIGN_CONVERSION
+-- Performing Test TOML11_COMPILER_SUPPORTS_WSIGN_CONVERSION - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WCONVERSION
+-- Performing Test TOML11_COMPILER_SUPPORTS_WCONVERSION - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WDUPLICATED_COND
+-- Performing Test TOML11_COMPILER_SUPPORTS_WDUPLICATED_COND - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WDUPLICATED_BRANCHES
+-- Performing Test TOML11_COMPILER_SUPPORTS_WDUPLICATED_BRANCHES - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WLOGICAL_OP
+-- Performing Test TOML11_COMPILER_SUPPORTS_WLOGICAL_OP - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WDOUBLE_PROMOTION
+-- Performing Test TOML11_COMPILER_SUPPORTS_WDOUBLE_PROMOTION - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WRANGE_LOOP_ANALYSIS
+-- Performing Test TOML11_COMPILER_SUPPORTS_WRANGE_LOOP_ANALYSIS - Failed
+-- Performing Test TOML11_COMPILER_SUPPORTS_WUNDEF
+-- Performing Test TOML11_COMPILER_SUPPORTS_WUNDEF - Success
+-- Performing Test TOML11_COMPILER_SUPPORTS_WSHADOW
+-- Performing Test TOML11_COMPILER_SUPPORTS_WSHADOW - Success
+-- Using user-provided dendrolib from: <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP_Fortran: -fopenmp (found version "4.5")
+-- Build spdlog: 1.14.1
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Build type: Release
+CMake Warning (dev) at <isolated-test-workspace>/recovery-dendro-test-v2-20261109/deps/root/usr/share/cmake-3.31/Modules/FetchContent.cmake:1953 (message):
+  Calling FetchContent_Populate(xsmm) is deprecated, call
+  FetchContent_MakeAvailable(xsmm) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(xsmm) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  <isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-5.01/CMakeLists.txt:228 (FetchContent_Populate)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP_Fortran: -fopenmp (found version "4.5")
+-- Configuring Dendro Library...
+-- Dendro unzip/zip speedups: master=OFF scatter_fast=OFF tensor_simd=OFF omp=OFF
+-- Dendro hybrid OpenMP/MPI path: OFF (implies unzip OMP)
+-- Dendro zip() plan: ON
+-- Dendro unzip plan: ON
+-- Dendro ghost pack flat (proc,var) threading: ON
+-- Dendro RK fusable ctx hooks: ON
+-- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so.3
+-- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so.3
+-- Found OpenMP_C: -fopenmp (found version "4.5")
+-- Found OpenMP_CXX: -fopenmp (found version "4.5")
+-- Found OpenMP_Fortran: -fopenmp (found version "4.5")
+-- BSSN deriv mixed-set trim: ON
+-- BSSN RK fusion override: ON (DENDRO_RK_FUSE=ON)
+-- BSSN derivative order: 6
+-- BSSN RHS source: src/rhs.cpp (pristine production)
+-- BSSN constraint kernel: scalar (physconeqs.cpp)
+-- Configuring done (6.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: <isolated-test-workspace>/recovery-dendro-test-v2-20261109/build/dendro
++ cmake --build <isolated-test-workspace>/recovery-dendro-test-v2-20261109/build/dendro --target tpid bssnSolver --parallel 2
+[  0%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_apply_bcs_inner_only.c.o
+[  0%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_aarch64_instructions.c.o
+[  0%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_apply_bcs_r_maxmin_partial_r_hDD_upwinding.c.o
+[  1%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_bcstruct_set_up.c.o
+[  1%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_cfl_limited_timestep_based_on_h_equals_r.c.o
+[  1%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_commondata_struct_set_to_default.c.o
+[  2%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics.c.o
+[  2%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics_area_centroid_and_Theta_norms.c.o
+[  2%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_aarch64_reference.c.o
+[  2%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics_file_output.c.o
+[  3%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_common.c.o
+[  4%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics_integration_weights.c.o
+[  4%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics_min_max_mean_radii_wrt_centroid.c.o
+[  4%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics_proper_circumferences.c.o
+[  5%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_diagnostics_proper_circumferences_general.c.o
+[  5%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_common_aarch64.c.o
+[  5%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_error_message.c.o
+[  6%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_find_horizon.c.o
+[  6%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_hDD_dD_and_W_dD_in_interp_src_grid_interior.c.o
+[  6%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_initial_data.c.o
+[  7%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_common_rv64.c.o
+[  8%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_interpolation_1d_radial_spokes_on_3d_src_grid.c.o
+[  8%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_interpolation_2d_external_input_to_interp_src_grid.c.o
+[  8%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_common_x86.c.o
+[  8%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_interpolation_2d_general__uniform_src_grid.c.o
+[  9%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_KO_apply.c.o
+[  9%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm.c.o
+[  9%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/MoL/bah_MoL_free_intermediate_stage_gfs.c.o
+[  9%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/MoL/bah_MoL_malloc_intermediate_stage_gfs.c.o
+[ 10%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/MoL/bah_MoL_step_forward_in_time.c.o
+[ 10%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_numgrid__evol_set_up.c.o
+[ 10%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_numgrid__external_input_set_up.c.o
+[ 11%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_numgrid__interp_src_set_up.c.o
+[ 13%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_aarch64.c.o
+[ 13%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_over_relaxation.c.o
+[ 14%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_params_struct_set_to_default.c.o
+[ 14%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_poisoning_check_inputs.c.o
+[ 14%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_poisoning_set_inputs.c.o
+[ 15%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_quadratic_extrapolation.c.o
+[ 15%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_radial_grid_cell_centered_set_up.c.o
+[ 15%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_rfm_precompute_defines.c.o
+[ 16%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_rfm_precompute_free.c.o
+[ 16%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_rfm_precompute_malloc.c.o
+[ 16%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_rhs_eval.c.o
+[ 16%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_amx.c.o
+[ 17%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_xx_to_Cart.c.o
+[ 17%] Building C object dendrolib/lib/BHaHAHA/CMakeFiles/BHaHAHA.dir/bah_xyz_center_r_minmax.c.o
+[ 18%] Linking C static library libBHaHAHA.a
+[ 18%] Built target BHaHAHA
+[ 19%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/spdlog.cpp.o
+[ 19%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_amx_microkernel.c.o
+[ 20%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_avx2_microkernel.c.o
+[ 20%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_avx512_microkernel.c.o
+[ 20%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o
+[ 20%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_avx_microkernel.c.o
+[ 21%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_common.c.o
+[ 21%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o
+[ 21%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_common_aarch64.c.o
+[ 22%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o
+[ 23%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_common_rv64.c.o
+[ 23%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_mma_microkernel.c.o
+[ 23%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/async.cpp.o
+[ 23%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_noarch.c.o
+[ 25%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_ppc64le.c.o
+[ 25%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_reference_impl.c.o
+[ 25%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/cfg.cpp.o
+[ 26%] Building CXX object _deps/spdlog-build/CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o
+[ 26%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_rv64.c.o
+[ 27%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_sme.c.o
+[ 27%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_sme_microkernel.c.o
+[ 27%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_sse_avx_avx2_avx512.c.o
+[ 28%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_sse_microkernel.c.o
+[ 28%] Linking CXX static library libspdlog.a
+[ 28%] Built target spdlog
+[ 28%] Built target AlwaysCheckGit
+[ 28%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_gemm_vsx_microkernel.c.o
+[ 28%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise.c.o
+[ 29%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_aarch64.c.o
+[ 29%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_common.c.o
+[ 30%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_gather_scatter_aarch64.c.o
+[ 30%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_gather_scatter_avx_avx512.c.o
+[ 30%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_misc_aarch64.c.o
+[ 31%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_misc_avx_avx512.c.o
+[ 31%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_reduce_aarch64.c.o
+[ 31%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_reduce_avx_avx512.c.o
+[ 32%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_reference_impl.c.o
+[ 32%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_rv64.c.o
+[ 33%] Building CXX object CMakeFiles/dendro_git_version_and_date.dir/generated/git_version_and_date.cpp.o
+[ 33%] Linking CXX static library libdendro_git_version_and_date.a
+[ 33%] Built target dendro_git_version_and_date
+[ 33%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_sse_avx_avx512.c.o
+[ 34%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_aarch64_asimd.c.o
+[ 34%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_aarch64_sve.c.o
+[ 35%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_avx.c.o
+[ 35%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_avx512.c.o
+[ 35%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_common.c.o
+[ 36%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_common_x86.c.o
+[ 36%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_rv64.c.o
+[ 36%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_transform_sse.c.o
+[ 38%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_unary_binary_aarch64.c.o
+[ 38%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_unary_binary_avx_avx512.c.o
+[ 38%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_mateltwise_unary_binary_rv64.c.o
+[ 39%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation.c.o
+[ 39%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_aarch64.c.o
+[ 39%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_avx_avx512.c.o
+[ 40%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_reference_impl.c.o
+[ 40%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_regblocks_aarch64.c.o
+[ 41%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_regblocks_avx_avx512.c.o
+[ 41%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_scratch_aarch64.c.o
+[ 41%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_matequation_scratch_avx_avx512.c.o
+[ 42%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm.c.o
+[ 42%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_aarch64.c.o
+[ 42%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_ac_rm.c.o
+[ 43%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_ac_rm_aarch64.c.o
+[ 43%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_ac_rm_avx_avx2_avx512.c.o
+[ 43%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_avx_avx2_avx512.c.o
+[ 44%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_bc_rm.c.o
+[ 44%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_bc_rm_aarch64.c.o
+[ 45%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_gemm_bc_rm_avx_avx2_avx512.c.o
+[ 45%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm.c.o
+[ 45%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_bcsc_bsparse.c.o
+[ 46%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_bcsc_bsparse_aarch64.c.o
+[ 46%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_bcsc_bsparse_avx_avx2_avx512_amx.c.o
+[ 46%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csc_bsparse.c.o
+[ 47%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csc_bsparse_aarch64.c.o
+[ 47%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csc_bsparse_avx_avx2_avx512.c.o
+[ 47%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csc_csparse.c.o
+[ 48%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csc_csparse_avx_avx2_avx512.c.o
+[ 48%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csr_asparse.c.o
+[ 48%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csr_asparse_aarch64.c.o
+[ 50%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csr_asparse_avx_avx2_avx512.c.o
+[ 50%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csr_bsparse.c.o
+[ 51%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csr_bsparse_aarch64.c.o
+[ 51%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_packed_spgemm_csr_bsparse_avx_avx2_avx512.c.o
+[ 51%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_ppc64le_instructions.c.o
+[ 52%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_ppc64le_reference.c.o
+[ 52%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_rv64_instructions.c.o
+[ 52%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_rv64_reference.c.o
+[ 53%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm.c.o
+[ 53%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm_csc_asparse.c.o
+[ 53%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm_csc_bsparse.c.o
+[ 54%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm_csc_reader.c.o
+[ 54%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm_csr_asparse.c.o
+[ 55%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm_csr_asparse_reg.c.o
+[ 55%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_spgemm_csr_reader.c.o
+[ 55%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_x86_instructions.c.o
+[ 56%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/generator_x86_reference.c.o
+[ 56%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_barrier.c.o
+[ 56%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_binaryexport_generator.c.o
+[ 57%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_cpuid_arm.c.o
+[ 57%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_cpuid_ppc.c.o
+[ 57%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_cpuid_rv64.c.o
+[ 58%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_cpuid_x86.c.o
+[ 58%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_fsspmdm.c.o
+[ 58%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_generator.c.o
+[ 59%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_hash.c.o
+[ 59%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_lpflt_quant.c.o
+[ 60%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_main.c.o
+[ 60%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_malloc.c.o
+[ 60%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_math.c.o
+[ 61%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_matrixeqn.c.o
+[ 61%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_memory.c.o
+[ 61%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_perf.c.o
+[ 63%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_rng.c.o
+[ 63%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_sync.c.o
+[ 63%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_timer.c.o
+[ 64%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_trace.c.o
+[ 64%] Building C object dendrolib/CMakeFiles/xsmm.dir<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/libxsmm/src/libxsmm_utils.c.o
+[ 65%] Linking C static library libxsmm.a
+[ 65%] Built target xsmm
+[ 65%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/dendro.cpp.o
+[ 66%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/point.cpp.o
+[ 66%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/binUtils.cpp.o
+[ 66%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/hcurvedata.cpp.o
+[ 67%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/genPts_par.cpp.o
+[ 67%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/TreeNode.cpp.o
+[ 67%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/treenode2vtk.cpp.o
+[ 68%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/parUtils.cpp.o
+[ 68%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/mesh.cpp.o
+[ 69%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/octUtils.cpp.o
+[ 69%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/dendroIO.cpp.o
+[ 69%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/block.cpp.o
+[ 70%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/sc_flops.cpp.o
+[ 70%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/profiler.cpp.o
+[ 70%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/dendroProfileParams.cpp.o
+[ 71%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/oda.cpp.o
+[ 71%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/odaUtils.cpp.o
+[ 71%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/sub_oda.cpp.o
+[ 72%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/meshUtils.cpp.o
+[ 72%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/waveletRefEl.cpp.o
+[ 73%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/test/src/meshTestUtils.cpp.o
+[ 73%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/aeh_bhahaha.cpp.o
+[ 73%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/bh_history.cpp.o
+[ 75%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/logger.cpp.o
+[ 75%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives.cpp.o
+[ 75%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/derivs_explicit.cpp.o
+[ 76%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/adv_derivs_explicit.cpp.o
+[ 76%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/derivs_compact.cpp.o
+[ 76%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/derivs_matrixonly.cpp.o
+[ 77%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/derivs_banded.cpp.o
+[ 77%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/derivs_ccfd.cpp.o
+[ 77%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/derivs_utils.cpp.o
+[ 78%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_explicitmatrix.cpp.o
+[ 78%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_byuderivs.cpp.o
+[ 79%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_ccfd.cpp.o
+[ 79%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_kimderivs.cpp.o
+[ 79%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_jonathantyler.cpp.o
+[ 80%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_bradylivescu.cpp.o
+[ 80%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_boris.cpp.o
+[ 80%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/impl_hybrid_approaches.cpp.o
+[ 81%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/filt_kodiss_explicit.cpp.o
+[ 81%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/src/derivatives/nova_derivs.cpp.o
+[ 81%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/FEM/examples/src/laplace.cpp.o
+[ 82%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/FEM/src/basis.cpp.o
+[ 82%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/FEM/src/refel.cpp.o
+[ 83%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/FEM/src/tensor.cpp.o
+[ 83%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/FEM/src/workspace.cpp.o
+[ 83%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/ODE/src/rk.cpp.o
+[ 84%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/ODE/src/subSM.cpp.o
+[ 84%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/ODE/src/rkMaxwell.cpp.o
+[ 84%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/ODE/src/rkTransport.cpp.o
+[ 85%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/ODE/src/enutsOp.cpp.o
+[ 85%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/IO/vtk/src/oct2vtk.cpp.o
+[ 85%] Building CXX object dendrolib/CMakeFiles/dendro5.dir/IO/vtk/src/checkPoint.cpp.o
+[ 86%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/adler32.c.o
+[ 86%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/compress.c.o
+[ 86%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/crc32.c.o
+[ 88%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/deflate.c.o
+[ 88%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/gzclose.c.o
+[ 89%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/gzlib.c.o
+[ 89%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/gzread.c.o
+[ 89%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/gzwrite.c.o
+[ 90%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/infback.c.o
+[ 90%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/inffast.c.o
+[ 90%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/inflate.c.o
+[ 91%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/inftrees.c.o
+[ 91%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/trees.c.o
+[ 91%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/uncompr.c.o
+[ 92%] Building C object dendrolib/CMakeFiles/dendro5.dir/IO/zlib/src/zutil.c.o
+[ 92%] Linking CXX static library libdendro5.a
+[ 92%] Built target dendro5
+[ 92%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/parameters.cpp.o
+[ 93%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/grUtils.cpp.o
+[ 93%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/rhs.cpp.o
+<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR/BSSN_GR/src/rhs.cpp: In function ‘void bssnrhs(double**, const double**, const unsigned int&, const double*, const double*, const unsigned int*, const unsigned int&, double, const double**)’:
+<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR/BSSN_GR/src/rhs.cpp:317:53: note: ‘#pragma message: BSSN: enabling both SSL and CAHD’
+  317 |   #pragma message("BSSN: enabling both SSL and CAHD")
+      |                                                     ^
+[ 94%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/sommerfeld_bcs.cpp.o
+[ 94%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/derivs.cpp.o
+<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR/BSSN_GR/src/derivs.cpp: In function ‘void set_appropriate_derivs(unsigned int)’:
+<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR/BSSN_GR/src/derivs.cpp:158:53: note: ‘#pragma message: 6th Order Derivatives are enabled!’
+  158 | #pragma message("6th Order Derivatives are enabled!")
+      |                                                     ^
+[ 94%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/physcon.cpp.o
+<isolated-test-workspace>/recovery-dendro-test-v2-20261109/src/Dendro-GR/BSSN_GR/src/physcon.cpp:20:67: note: ‘#pragma message: [bssn] constraint kernel : scalar physconeqs.cpp’
+   20 | #pragma message("[bssn] constraint kernel : scalar physconeqs.cpp")
+      |                                                                   ^
+[ 95%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/profile_params.cpp.o
+[ 95%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/bssn_constraints.cpp.o
+[ 95%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/TPCoordTransf.cpp.o
+[ 96%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/TPEquations.cpp.o
+[ 96%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/TPFuncAndJacobian.cpp.o
+[ 96%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/TPNewton.cpp.o
+[ 97%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/TPUtilities.cpp.o
+[ 97%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/TwoPunctures.cpp.o
+[ 98%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/dataUtils.cpp.o
+[ 98%] Building Fortran object BSSN_GR/CMakeFiles/bssn_common.dir/src/hadrhs.F90.o
+f951: Warning: command-line option ‘-fext-numeric-literals’ is valid for C++/ObjC++ but not for Fortran
+[ 98%] Building CXX object BSSN_GR/CMakeFiles/bssn_common.dir/src/trumpet.cpp.o
+[ 98%] Built target bssn_common
+[ 98%] Building CXX object BSSN_GR/CMakeFiles/tpid.dir/src/TPID.cpp.o
+[100%] Linking CXX executable tpid
+[100%] Built target tpid
+[ 15%] Built target BHaHAHA
+[ 18%] Built target spdlog
+[ 64%] Built target xsmm
+[ 91%] Built target dendro5
+[ 91%] Built target AlwaysCheckGit
+[ 92%] Built target dendro_git_version_and_date
+[ 98%] Built target bssn_common
+[100%] Building CXX object BSSN_GR/CMakeFiles/bssnSolver.dir/src/bssnAEH.cpp.o
+[100%] Building CXX object BSSN_GR/CMakeFiles/bssnSolver.dir/src/bssngr_main.cpp.o
+[100%] Building CXX object BSSN_GR/CMakeFiles/bssnSolver.dir/src/bssnCtx.cpp.o
+[100%] Linking CXX executable bssnSolver
+[100%] Built target bssnSolver
++ ldd <isolated-test-workspace>/recovery-dendro-test-v2-20261109/build/dendro/BSSN_GR/tpid
++ ldd <isolated-test-workspace>/recovery-dendro-test-v2-20261109/build/dendro/BSSN_GR/bssnSolver
+ISOLATED DENDRO BUILD/LINKAGE PASSED (local Git/package caches, no remote transfer test)

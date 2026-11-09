@@ -1,0 +1,155 @@
+{
+  "repository": "wkblack/pynwave2d",
+  "date": "2026-11-09",
+  "method": "GitHub object API source-tree snapshots; original local history retained in offline Git bundle",
+  "sourceTreeHashesVerified": true,
+  "refHeadsVerified": true,
+  "main": "40b17b4aabf15e655015f036d33464893fdb91b3",
+  "mainUnchanged": true,
+  "branches": [
+    {
+      "local_ref": "backup/beta-cloud-20261109/cloud-restoration",
+      "local_commit": "8ff118c0bfd8b16adbdad89dfa9f1becb96cd3bb",
+      "tree": "755f0962b72c32650acc117008ba69b9b97f43cf",
+      "remote_ref": "backup/beta-cloud-20261109/cloud-restoration",
+      "remote_commit": "c9e938333cce018e2a651455a5944a581fdd2220",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/cloud-restoration"
+    },
+    {
+      "local_ref": "backup/beta-cloud-20261109/runtime-evidence",
+      "local_commit": "891b9b5e5a489e684b956d82e73b2ca29a4ac6b6",
+      "tree": "62e9b8f271beaba4815c21c53f65d69083db503f",
+      "remote_ref": "backup/beta-cloud-20261109/runtime-evidence",
+      "remote_commit": "bba9f12cd437843e025e6703a300ed689686f34a",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/runtime-evidence"
+    },
+    {
+      "local_ref": "audit/operator-fixes",
+      "local_commit": "fd190dc89bc72e2285a5800dbb08f10ca4340fac",
+      "tree": "d94ca1824fb859ad109203a512bd3b63aef7a04d",
+      "remote_ref": "backup/beta-cloud-20261109/audit/operator-fixes",
+      "remote_commit": "dabc183a1662cd4cf31bb9afa35a67ad3c50ecee",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/audit/operator-fixes"
+    },
+    {
+      "local_ref": "backup/beta-cloud-20261109/spherical-background-wip",
+      "local_commit": "78a0f571d27c01c3f61b11e49881bb64e28d9392",
+      "tree": "e8ba7a779934dd3c5e398d2004d7137643f6b586",
+      "remote_ref": "backup/beta-cloud-20261109/spherical-background-wip",
+      "remote_commit": "6adafaab7ac00df379f7a91e13a8edb52963ea22",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/spherical-background-wip"
+    },
+    {
+      "local_ref": "experiment/h-gamma-damping",
+      "local_commit": "900c9c16fb8db8bb3b8ef74d792dfb16753db781",
+      "tree": "27a97ed1937e197aae0ac1440c10d59b8ff06970",
+      "remote_ref": "backup/beta-cloud-20261109/experiment/h-gamma-damping",
+      "remote_commit": "3488d3099a72bce4a7ec23419d9940c6992f24c7",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/experiment/h-gamma-damping"
+    },
+    {
+      "local_ref": "experiment/gamma-damping",
+      "local_commit": "f52cf8f27ed518ef284dcb4c5a1c854bef014b6c",
+      "tree": "05c2c9c2bc5b1b2e69e7ee9f6474d9de5e01f44f",
+      "remote_ref": "backup/beta-cloud-20261109/experiment/gamma-damping",
+      "remote_commit": "49bb1851b49ea5507cc945bda2b6cfbddded4eae",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/experiment/gamma-damping"
+    },
+    {
+      "local_ref": "fix/bssn-boundary-parity-ghost-constraints",
+      "local_commit": "918dcfb30574a4d5fd52ae51d460078d47393e00",
+      "tree": "dd5b51b95ae6b5bdd2cc37b5db5b0f79231f08dc",
+      "remote_ref": "backup/beta-cloud-20261109/fix/bssn-boundary-parity-ghost-constraints",
+      "remote_commit": "f74d96e8d6a61fc203f4ec0244bebe7a21e13618",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/bssn-boundary-parity-ghost-constraints"
+    },
+    {
+      "local_ref": "fix/ko8-boundary-parity",
+      "local_commit": "6d6f5349f3ea207d13d9dc17eb74ebc1c6845107",
+      "tree": "9f8cf8dc7c194a400124fab66cbd4262697e7462",
+      "remote_ref": "backup/beta-cloud-20261109/fix/ko8-boundary-parity",
+      "remote_commit": "844363385389d828f7dd8a78f95e1aa211fd3443",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/ko8-boundary-parity"
+    },
+    {
+      "local_ref": "fix/filter-pipeline-config",
+      "local_commit": "38c55060350cafb6653382c295410bb90a025d3b",
+      "tree": "70f386e4c764eabb94418f91d7ecd831e9285362",
+      "remote_ref": "backup/beta-cloud-20261109/fix/filter-pipeline-config",
+      "remote_commit": "3bd9ef5fc4113ee3ec465a3b59be5ff1e4b9fde3",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/filter-pipeline-config"
+    },
+    {
+      "local_ref": "fix/horizon-recovery",
+      "local_commit": "1dfa6ff66ec79e0fb164e2db9438aa7c99e4401e",
+      "tree": "dc536e819fdd31d0f5a8f7788571ca0dbd003c11",
+      "remote_ref": "backup/beta-cloud-20261109/fix/horizon-recovery",
+      "remote_commit": "c8082ac8341591315441a224de88eb59e1f233fb",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/horizon-recovery"
+    },
+    {
+      "local_ref": "fix/runtime-robustness",
+      "local_commit": "98aa078c659a931367d5b90405c36479d8f75ef0",
+      "tree": "f430a65981fb71be677b5492ea8aea4440106597",
+      "remote_ref": "backup/beta-cloud-20261109/fix/runtime-robustness",
+      "remote_commit": "f1934a4b149607ef975cbb49df5bc6711b6819d6",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/runtime-robustness"
+    },
+    {
+      "local_ref": "fix/rk-stage-boundaries",
+      "local_commit": "65887191ab546e53beaf0d41242b219a62d462c6",
+      "tree": "dfbb8959e2606e92b6964f4ac9ad1c85b061bd23",
+      "remote_ref": "backup/beta-cloud-20261109/fix/rk-stage-boundaries",
+      "remote_commit": "16d013f01855094e749eb1a8655545702bccbe9e",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/rk-stage-boundaries"
+    },
+    {
+      "local_ref": "fix/runtime-ah-diagnostics",
+      "local_commit": "7060544f77dcf049e3c741941ed3253689daf2c7",
+      "tree": "4e895724f4092aaec12244e1ee1016975fc7aac5",
+      "remote_ref": "backup/beta-cloud-20261109/fix/runtime-ah-diagnostics",
+      "remote_commit": "54e3ea18b7c98c04509cd81644536a47da2d6ac1",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/fix/runtime-ah-diagnostics"
+    },
+    {
+      "local_ref": "review/integration-five-fixes",
+      "local_commit": "32b24218b3fee881a3fb96eae784194d6c0ccfbc",
+      "tree": "6a2cb092ae8d7db990c5d35febed6acb42ce2b3d",
+      "remote_ref": "backup/beta-cloud-20261109/review/integration-five-fixes",
+      "remote_commit": "49a4b9319dbb1f318dd1461ede2e5c6e2c4957e0",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/review/integration-five-fixes"
+    },
+    {
+      "local_ref": "test/spherical-boundary",
+      "local_commit": "918dcfb30574a4d5fd52ae51d460078d47393e00",
+      "tree": "dd5b51b95ae6b5bdd2cc37b5db5b0f79231f08dc",
+      "remote_ref": "backup/beta-cloud-20261109/test/spherical-boundary",
+      "remote_commit": "b5b34a7591e86eba0e7ae2f9bf1e012856385d74",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/test/spherical-boundary"
+    },
+    {
+      "local_ref": "review/integration-five-clean",
+      "local_commit": "77497d456e23877e90252d057f9c6a80f9c44d60",
+      "tree": "67ed5b21a854541dc1401fd3b164e8de455d9510",
+      "remote_ref": "backup/beta-cloud-20261109/review/integration-five-clean",
+      "remote_commit": "f9699341fa0ef7a32be8fa31228cc313053ddec6",
+      "ref_verified": true,
+      "url": "https://github.com/wkblack/pynwave2d/tree/backup/beta-cloud-20261109/review/integration-five-clean"
+    }
+  ]
+}

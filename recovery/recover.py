@@ -117,7 +117,7 @@ class Recovery:
             lock.close()
 
     def prerequisites(self):
-        for cmd in ('git', self.a.python):
+        for cmd in (self.a.python,):
             if not shutil.which(cmd):
                 fail(f'Missing prerequisite {cmd}; install it from your OS vendor first.')
         if self.a.deps == 'apt':
@@ -133,6 +133,8 @@ class Recovery:
             self.run(sudo + ['apt-get', 'install', '-y', '--no-install-recommends', *packages])
         elif self.a.deps == 'local-apt':
             self.local_apt()
+        if not shutil.which('git', path=self.env['PATH']):
+            fail('Missing Git prerequisite. Install it from your OS vendor or use --deps apt.')
 
     def local_apt(self):
         release = Path('/etc/os-release').read_text() if Path('/etc/os-release').exists() else ''

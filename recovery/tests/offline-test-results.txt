@@ -1,39 +1,39 @@
-test_checkout_is_repeatable_and_keeps_bundle_branches (test_recovery.RecoveryTests.test_checkout_is_repeatable_and_keeps_bundle_branches) ... + git clone --no-checkout /tmp/tmprk2e97y8/fixture.bundle /tmp/tmprk2e97y8/output/src/fixture.incomplete
-Cloning into '/tmp/tmprk2e97y8/output/src/fixture.incomplete'...
-+ git -C /tmp/tmprk2e97y8/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
-+ git -C /tmp/tmprk2e97y8/output/src/fixture.incomplete checkout --detach 4c987e06de26bff5f2a5d7a2f5a8b2ef7df9ac85
-+ git -C /tmp/tmprk2e97y8/output/src/fixture diff --binary HEAD
-+ git -C /tmp/tmprk2e97y8/output/src/fixture rev-parse HEAD
-+ git -C /tmp/tmprk2e97y8/output/src/fixture remote get-url origin
-+ git -C /tmp/tmprk2e97y8/output/src/fixture diff --binary HEAD
+test_checkout_is_repeatable_and_keeps_bundle_branches (test_recovery.RecoveryTests.test_checkout_is_repeatable_and_keeps_bundle_branches) ... + git clone --no-checkout /tmp/tmpv__veriz/fixture.bundle /tmp/tmpv__veriz/output/src/fixture.incomplete
+Cloning into '/tmp/tmpv__veriz/output/src/fixture.incomplete'...
++ git -C /tmp/tmpv__veriz/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
++ git -C /tmp/tmpv__veriz/output/src/fixture.incomplete checkout --detach ae767f8f9fd6844eaa115509607c0c3042378119
++ git -C /tmp/tmpv__veriz/output/src/fixture diff --binary HEAD
++ git -C /tmp/tmpv__veriz/output/src/fixture rev-parse HEAD
++ git -C /tmp/tmpv__veriz/output/src/fixture remote get-url origin
++ git -C /tmp/tmpv__veriz/output/src/fixture diff --binary HEAD
 ok
-test_dirty_source_refused_without_overwrite (test_recovery.RecoveryTests.test_dirty_source_refused_without_overwrite) ... + git clone --no-checkout /tmp/tmpexvppymd/fixture.bundle /tmp/tmpexvppymd/output/src/fixture.incomplete
-Cloning into '/tmp/tmpexvppymd/output/src/fixture.incomplete'...
-+ git -C /tmp/tmpexvppymd/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
-+ git -C /tmp/tmpexvppymd/output/src/fixture.incomplete checkout --detach 4c987e06de26bff5f2a5d7a2f5a8b2ef7df9ac85
-+ git -C /tmp/tmpexvppymd/output/src/fixture diff --binary HEAD
-+ git -C /tmp/tmpexvppymd/output/src/fixture rev-parse HEAD
-+ git -C /tmp/tmpexvppymd/output/src/fixture remote get-url origin
-+ git -C /tmp/tmpexvppymd/output/src/fixture diff --binary HEAD
+test_dirty_source_refused_without_overwrite (test_recovery.RecoveryTests.test_dirty_source_refused_without_overwrite) ... + git clone --no-checkout /tmp/tmp7o406zcs/fixture.bundle /tmp/tmp7o406zcs/output/src/fixture.incomplete
+Cloning into '/tmp/tmp7o406zcs/output/src/fixture.incomplete'...
++ git -C /tmp/tmp7o406zcs/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
++ git -C /tmp/tmp7o406zcs/output/src/fixture.incomplete checkout --detach ae767f8f9fd6844eaa115509607c0c3042378119
++ git -C /tmp/tmp7o406zcs/output/src/fixture diff --binary HEAD
++ git -C /tmp/tmp7o406zcs/output/src/fixture rev-parse HEAD
++ git -C /tmp/tmp7o406zcs/output/src/fixture remote get-url origin
++ git -C /tmp/tmp7o406zcs/output/src/fixture diff --binary HEAD
 ok
-test_fallback_rejects_wrong_tree (test_recovery.RecoveryTests.test_fallback_rejects_wrong_tree) ... + git clone --no-checkout /tmp/tmpyw4pm2ye/fixture.bundle /tmp/tmpyw4pm2ye/output/src/fixture.incomplete
-Cloning into '/tmp/tmpyw4pm2ye/output/src/fixture.incomplete'...
-+ git -C /tmp/tmpyw4pm2ye/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
-+ git -C /tmp/tmpyw4pm2ye/output/src/fixture.incomplete checkout --detach 4c987e06de26bff5f2a5d7a2f5a8b2ef7df9ac85
-+ git -C /tmp/tmpyw4pm2ye/output/src/fixture diff --binary HEAD
-+ git -C /tmp/tmpyw4pm2ye/output/src/fixture rev-parse HEAD
-+ git -C /tmp/tmpyw4pm2ye/output/src/fixture remote get-url origin
-+ git -C /tmp/tmpyw4pm2ye/output/src/fixture rev-parse 'HEAD^{tree}'
+test_fallback_rejects_wrong_tree (test_recovery.RecoveryTests.test_fallback_rejects_wrong_tree) ... + git clone --no-checkout /tmp/tmpbpw38ovs/fixture.bundle /tmp/tmpbpw38ovs/output/src/fixture.incomplete
+Cloning into '/tmp/tmpbpw38ovs/output/src/fixture.incomplete'...
++ git -C /tmp/tmpbpw38ovs/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
++ git -C /tmp/tmpbpw38ovs/output/src/fixture.incomplete checkout --detach ae767f8f9fd6844eaa115509607c0c3042378119
++ git -C /tmp/tmpbpw38ovs/output/src/fixture diff --binary HEAD
++ git -C /tmp/tmpbpw38ovs/output/src/fixture rev-parse HEAD
++ git -C /tmp/tmpbpw38ovs/output/src/fixture remote get-url origin
++ git -C /tmp/tmpbpw38ovs/output/src/fixture rev-parse 'HEAD^{tree}'
 ok
-test_fallback_uses_verified_tree_when_bundle_absent (test_recovery.RecoveryTests.test_fallback_uses_verified_tree_when_bundle_absent) ... + git clone --no-checkout /tmp/tmp86b5zhzj/fixture.bundle /tmp/tmp86b5zhzj/output/src/fixture.incomplete
-Cloning into '/tmp/tmp86b5zhzj/output/src/fixture.incomplete'...
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture.incomplete checkout --detach 4c987e06de26bff5f2a5d7a2f5a8b2ef7df9ac85
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture diff --binary HEAD
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture rev-parse HEAD
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture remote get-url origin
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture rev-parse 'HEAD^{tree}'
-+ git -C /tmp/tmp86b5zhzj/output/src/fixture diff --binary HEAD
+test_fallback_uses_verified_tree_when_bundle_absent (test_recovery.RecoveryTests.test_fallback_uses_verified_tree_when_bundle_absent) ... + git clone --no-checkout /tmp/tmppo9q6hhm/fixture.bundle /tmp/tmppo9q6hhm/output/src/fixture.incomplete
+Cloning into '/tmp/tmppo9q6hhm/output/src/fixture.incomplete'...
++ git -C /tmp/tmppo9q6hhm/output/src/fixture.incomplete remote set-url origin https://github.com/example/fixture.git
++ git -C /tmp/tmppo9q6hhm/output/src/fixture.incomplete checkout --detach ae767f8f9fd6844eaa115509607c0c3042378119
++ git -C /tmp/tmppo9q6hhm/output/src/fixture diff --binary HEAD
++ git -C /tmp/tmppo9q6hhm/output/src/fixture rev-parse HEAD
++ git -C /tmp/tmppo9q6hhm/output/src/fixture remote get-url origin
++ git -C /tmp/tmppo9q6hhm/output/src/fixture rev-parse 'HEAD^{tree}'
++ git -C /tmp/tmppo9q6hhm/output/src/fixture diff --binary HEAD
 ok
 test_managed_settings_edits_preserved (test_recovery.RecoveryTests.test_managed_settings_edits_preserved) ... ok
 test_no_secrets_in_manifest_urls (test_recovery.RecoveryTests.test_no_secrets_in_manifest_urls) ... ok
@@ -42,6 +42,6 @@ test_plan_has_no_filesystem_side_effect (test_recovery.RecoveryTests.test_plan_h
 test_symlink_settings_refused (test_recovery.RecoveryTests.test_symlink_settings_refused) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.351s
+Ran 9 tests in 0.324s
 
 OK

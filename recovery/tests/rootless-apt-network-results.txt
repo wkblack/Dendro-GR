@@ -1,0 +1,47 @@
++ gcc -dumpversion
++ mpirun --version
++ apt-get -o Dir::Etc::sourcelist=<isolated-test-workspace>/recovery-apt-network-test-20261109/deps/sources.list -o Dir::Etc::sourceparts=- -o Dir::State::lists=<isolated-test-workspace>/recovery-apt-network-test-20261109/deps/lists -o Dir::Cache=<isolated-test-workspace>/recovery-apt-network-test-20261109/deps/cache -o APT::Get::List-Cleanup=0 update
+Get:1 https://deb.debian.org/debian trixie InRelease [140 kB]
+Get:2 https://deb.debian.org/debian trixie/main amd64 Packages [9678 kB]
+Fetched 9819 kB in 8s (1279 kB/s)
+Reading package lists...
+W: Unable to read /etc/apt/apt.conf.d/80-applied-apt-retries - open (13: Permission denied)
++ apt-get -o Dir::Etc::sourcelist=<isolated-test-workspace>/recovery-apt-network-test-20261109/deps/sources.list -o Dir::Etc::sourceparts=- -o Dir::State::lists=<isolated-test-workspace>/recovery-apt-network-test-20261109/deps/lists -o Dir::Cache=<isolated-test-workspace>/recovery-apt-network-test-20261109/deps/cache -o APT::Get::List-Cleanup=0 download cmake-data=3.31.6-2 cmake=3.31.6-2 gfortran-14-x86-64-linux-gnu=14.2.0-19 libblas-dev=3.12.1-6 libgfortran-14-dev=14.2.0-19 libgfortran5=14.2.0-19 libgsl-dev=2.8+dfsg-5 libgsl28=2.8+dfsg-5 libgslcblas0=2.8+dfsg-5 liblapack-dev=3.12.1-6 libopenmpi-dev=5.0.7-1 librhash1=1.4.5-1 libuv1t64=1.50.0-2
+Get:1 https://deb.debian.org/debian trixie/main amd64 cmake amd64 3.31.6-2 [12.0 MB]
+Get:2 https://deb.debian.org/debian trixie/main amd64 cmake-data all 3.31.6-2 [2268 kB]
+Get:3 https://deb.debian.org/debian trixie/main amd64 gfortran-14-x86-64-linux-gnu amd64 14.2.0-19 [11.7 MB]
+Get:4 https://deb.debian.org/debian trixie/main amd64 libgfortran-14-dev amd64 14.2.0-19 [880 kB]
+Get:5 https://deb.debian.org/debian trixie/main amd64 libgfortran5 amd64 14.2.0-19 [836 kB]
+Get:6 https://deb.debian.org/debian trixie/main amd64 libgsl-dev amd64 2.8+dfsg-5 [1222 kB]
+Get:7 https://deb.debian.org/debian trixie/main amd64 libgsl28 amd64 2.8+dfsg-5 [994 kB]
+Get:8 https://deb.debian.org/debian trixie/main amd64 libgslcblas0 amd64 2.8+dfsg-5 [116 kB]
+Get:9 https://deb.debian.org/debian trixie/main amd64 libblas-dev amd64 3.12.1-6 [170 kB]
+Get:10 https://deb.debian.org/debian trixie/main amd64 liblapack-dev amd64 3.12.1-6 [4991 kB]
+Get:11 https://deb.debian.org/debian trixie/main amd64 libuv1t64 amd64 1.50.0-2 [154 kB]
+Get:12 https://deb.debian.org/debian trixie/main amd64 libopenmpi-dev amd64 5.0.7-1 [1089 kB]
+Get:13 https://deb.debian.org/debian trixie/main amd64 librhash1 amd64 1.4.5-1 [132 kB]
+Fetched 36.5 MB in 9s (4106 kB/s)
+W: Unable to read /etc/apt/apt.conf.d/80-applied-apt-retries - open (13: Permission denied)
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/cmake-data_3.31.6-2_all.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/cmake_3.31.6-2_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/gfortran-14-x86-64-linux-gnu_14.2.0-19_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libblas-dev_3.12.1-6_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libgfortran-14-dev_14.2.0-19_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libgfortran5_14.2.0-19_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libgsl-dev_2.8+dfsg-5_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libgsl28_2.8+dfsg-5_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libgslcblas0_2.8+dfsg-5_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/liblapack-dev_3.12.1-6_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libopenmpi-dev_5.0.7-1_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/librhash1_1.4.5-1_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ dpkg-deb -x <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/packages/libuv1t64_1.50.0-2_amd64.deb <isolated-test-workspace>/recovery-apt-network-test-20261109/deps/root
++ git clone --no-checkout <isolated-test-workspace>/recovery-kit-20261109/bundles/pynwave2d.bundle <isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d.incomplete
+Cloning into '<isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d.incomplete'...
++ git -C <isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d.incomplete remote set-url origin https://github.com/davidneilsen/pynwave2d.git
++ git -C <isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d.incomplete checkout --detach 918dcfb30574a4d5fd52ae51d460078d47393e00
++ git -C <isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d diff --binary HEAD
++ git -C <isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d apply --check <isolated-test-workspace>/recovery-kit-20261109/patches/pynwave-any-import.patch
++ git -C <isolated-test-workspace>/recovery-apt-network-test-20261109/src/pynwave2d apply <isolated-test-workspace>/recovery-kit-20261109/patches/pynwave-any-import.patch
+
+Recovery completed. Activate explicitly: source <isolated-test-workspace>/recovery-apt-network-test-20261109/activate.sh
+Verification report: <isolated-test-workspace>/recovery-apt-network-test-20261109/logs/verification-20261109T194744.355137Z.json
