@@ -1,0 +1,12 @@
+diff --git a/bssn/bssnutils.py b/bssn/bssnutils.py
+index f1966c0..eaeb932 100644
+--- a/bssn/bssnutils.py
++++ b/bssn/bssnutils.py
+@@ -1,6 +1,7 @@
+ import numpy as np
+ import sys
+ import os
++from typing import Any
+ 
+ # from pdb import set_trace as bp
+ 

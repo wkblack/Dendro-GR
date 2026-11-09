@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "snapshot_date": "2026-11-09",
+  "purpose": "Rebuild research tools after a disposable computer wipe; not resume lost simulations.",
+  "repositories": [
+    {
+      "name": "Dendro-GR",
+      "group": "dendro",
+      "url": "https://github.com/dfvankomen/Dendro-GR.git",
+      "branch": "experimental",
+      "commit": "d00a675aa6a379d91a5ab0329a2088420d7d19dd"
+    },
+    {
+      "name": "Dendro-5.01",
+      "group": "dendro",
+      "url": "https://github.com/dfvankomen/Dendro-5.01.git",
+      "branch": "experimental",
+      "commit": "0e6198bf4cae3307a59b4c4a0037ee44979fec2f"
+    },
+    {
+      "name": "toml11",
+      "group": "dendro",
+      "url": "https://github.com/ToruNiina/toml11.git",
+      "branch": "v4.4.0",
+      "commit": "be08ba2be2a964edcdb3d3e3ea8d100abc26f286"
+    },
+    {
+      "name": "spdlog",
+      "group": "dendro",
+      "url": "https://github.com/gabime/spdlog.git",
+      "branch": "v1.14.1",
+      "commit": "27cb4c76708608465c413f6d0e6b8d99a4d84302"
+    },
+    {
+      "name": "libxsmm",
+      "group": "dendro",
+      "url": "https://github.com/libxsmm/libxsmm.git",
+      "branch": "main",
+      "commit": "0c2fae61b79da495eb560e6eb29f60fd9024fec1"
+    },
+    {
+      "name": "pynwave2d",
+      "group": "pynwave",
+      "url": "https://github.com/davidneilsen/pynwave2d.git",
+      "branch": "fix/bssn-boundary-parity-ghost-constraints",
+      "commit": "918dcfb30574a4d5fd52ae51d460078d47393e00",
+      "bundle": "bundles/pynwave2d.bundle",
+      "patch": "patches/pynwave-any-import.patch",
+      "fallback": {
+        "url": "https://github.com/wkblack/pynwave2d.git",
+        "branch": "backup/beta-cloud-20261109/cloud-restoration",
+        "commit": "c9e938333cce018e2a651455a5944a581fdd2220",
+        "tree": "755f0962b72c32650acc117008ba69b9b97f43cf",
+        "note": "Remote reconstruction preserves the repaired source tree; offline bundle preserves original commit history."
+      }
+    }
+  ],
+  "build": {
+    "targets": [
+      "tpid",
+      "bssnSolver"
+    ],
+    "cmake_options": [
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DWITH_CUDA=OFF",
+      "-DDENDRO_ENABLE_HDF5=OFF",
+      "-DBSSN_USE_6TH_ORDER_DERIVS=ON",
+      "-DBSSN_USE_4TH_ORDER_DERIVS=OFF",
+      "-DBSSN_USE_8TH_ORDER_DERIVS=OFF",
+      "-DBUILD_TESTING=OFF",
+      "-DTOML11_BUILD_TESTS=OFF"
+    ],
+    "original_cpu_arch": "native",
+    "two_punctures": "Bundled in Dendro-GR/BSSN_GR. tpid is a CMake target, not a separate repository."
+  },
+  "python": {
+    "tested_version": "3.12.14",
+    "minimum": "3.12",
+    "lock": "python-requirements.lock",
+    "lock_kind": "Exact package versions without wheel hashes; requires package registry access."
+  },
+  "platform": {
+    "tested": "Debian 13 amd64 with GCC 14, OpenMPI 5.0.7 runtime, BLAS/LAPACK runtimes",
+    "local_apt": "Restricted to that base; exact signed Debian package versions plus SHA256."
+  },
+  "limitations": [
+    "Pins freeze this known research state, not the latest upstream main.",
+    "No credentials, shell dotfiles, or global Git identity copied.",
+    "Old simulation outputs/checkpoints are not contained in this setup bundle.",
+    "Native compiler optimization is host-specific; rebuild on each CPU.",
+    "Only pynwave2d source is bundled; public Dendro and dependency commits require GitHub access.",
+    "Scientific validity, convergence, and long evolutions are not established by installation tests."
+  ]
+}

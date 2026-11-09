@@ -1,0 +1,24 @@
+Nt = 40
+Nx = 800
+Xmin = -20.0
+Xmax = 20.0
+NGhost = 3
+cfl = 0.1
+eta = 2.0
+D1 = ["JT4", "ME6"]
+D2 = ["JT4", "ME6"]
+BHMask = true
+BHMaskPos = 0.0
+BHMaskWidth = 0.05
+Mass = 1.0
+collapsed_lapse = true
+initial_data = "Puncture"
+output_dir = "smoke-output"
+output_interval = 40
+print_interval = 20
+bhmask_outer_radius = 15.0
+[[filters]]
+type = "KO6"
+apply = "Rhs"
+sigma = 0.5
+filter_boundary = false

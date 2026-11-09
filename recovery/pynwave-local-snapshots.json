@@ -1,0 +1,38 @@
+[
+  {
+    "worktree": "pynwave2d",
+    "label": "cloud-restoration",
+    "parent": "918dcfb30574a4d5fd52ae51d460078d47393e00",
+    "tree": "755f0962b72c32650acc117008ba69b9b97f43cf",
+    "commit": "8ff118c0bfd8b16adbdad89dfa9f1becb96cd3bb",
+    "files": [
+      "bssn/bssnutils.py"
+    ],
+    "ref": "refs/heads/backup/beta-cloud-20261109/cloud-restoration"
+  },
+  {
+    "worktree": "boundary-fixes",
+    "label": "spherical-background-wip",
+    "parent": "918dcfb30574a4d5fd52ae51d460078d47393e00",
+    "tree": "e8ba7a779934dd3c5e398d2004d7137643f6b586",
+    "commit": "78a0f571d27c01c3f61b11e49881bb64e28d9392",
+    "files": [
+      "bssn/bssneqs.py",
+      "tests/test_spherical_gtt_background.py"
+    ],
+    "ref": "refs/heads/backup/beta-cloud-20261109/spherical-background-wip"
+  },
+  {
+    "worktree": "runtime-fixes",
+    "label": "runtime-evidence",
+    "parent": "7060544f77dcf049e3c741941ed3253689daf2c7",
+    "tree": "62e9b8f271beaba4815c21c53f65d69083db503f",
+    "commit": "891b9b5e5a489e684b956d82e73b2ca29a4ac6b6",
+    "files": [
+      "tests/RUNTIME_VALIDATION.md",
+      "tests/runtime-evidence/baseline.log",
+      "tests/runtime-evidence/fixed.log"
+    ],
+    "ref": "refs/heads/backup/beta-cloud-20261109/runtime-evidence"
+  }
+]

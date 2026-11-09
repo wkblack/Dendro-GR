@@ -1,0 +1,45 @@
++ git -C <isolated-test-workspace>/recovery-kit-test-20261109/src/pynwave2d rev-parse HEAD
++ git -C <isolated-test-workspace>/recovery-kit-test-20261109/src/pynwave2d remote get-url origin
++ git -C <isolated-test-workspace>/recovery-kit-test-20261109/src/pynwave2d diff --binary HEAD
++ python3 -c 'import sys;print("%d.%d" % sys.version_info[:2])'
++ <isolated-test-workspace>/recovery-kit-test-20261109/venv/bin/python -m pip --isolated --disable-pip-version-check --cache-dir <isolated-test-workspace>/recovery-kit-test-20261109/cache/pip install --index-url https://pypi.org/simple -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock
+Requirement already satisfied: contourpy==1.4.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 1)) (1.4.0)
+Requirement already satisfied: cycler==0.12.1 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 2)) (0.12.1)
+Requirement already satisfied: fonttools==4.68.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 3)) (4.68.0)
+Requirement already satisfied: h5py==3.16.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 4)) (3.16.0)
+Requirement already satisfied: kiwisolver==1.5.1 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 5)) (1.5.1)
+Requirement already satisfied: llvmlite==0.50.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 6)) (0.50.0)
+Requirement already satisfied: matplotlib==3.11.2 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 7)) (3.11.2)
+Requirement already satisfied: narwhals==2.28.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 8)) (2.28.0)
+Requirement already satisfied: numba==0.68.1 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 9)) (0.68.1)
+Requirement already satisfied: numpy==2.5.4 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 10)) (2.5.4)
+Requirement already satisfied: packaging==26.3 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 11)) (26.3)
+Requirement already satisfied: pandas==3.1.1 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 12)) (3.1.1)
+Requirement already satisfied: pentapy==1.4.1 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 13)) (1.4.1)
+Requirement already satisfied: pillow==13.0.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 14)) (13.0.0)
+Requirement already satisfied: plotly==7.1.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 15)) (7.1.0)
+Requirement already satisfied: pyparsing==3.3.3 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 16)) (3.3.3)
+Requirement already satisfied: python-dateutil==4.0.0 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 17)) (4.0.0)
+Requirement already satisfied: scipy==1.18.1 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 18)) (1.18.1)
+Requirement already satisfied: seaborn==0.13.2 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 19)) (0.13.2)
+Requirement already satisfied: tzdata==2026.6 in ./recovery-kit-test-20261109/venv/lib/python3.12/site-packages (from -r <isolated-test-workspace>/recovery-kit-20261109/python-requirements.lock (line 20)) (2026.6)
++ <isolated-test-workspace>/recovery-kit-test-20261109/venv/bin/python -c 'import site;print(site.getsitepackages()[0])'
++ <isolated-test-workspace>/recovery-kit-test-20261109/venv/bin/python -m pip --isolated --disable-pip-version-check --cache-dir <isolated-test-workspace>/recovery-kit-test-20261109/cache/pip check
+No broken requirements found.
++ <isolated-test-workspace>/recovery-kit-test-20261109/venv/bin/python -c 'import nwave,numpy,scipy,numba,pentapy,h5py,matplotlib,pandas,seaborn,plotly;print("Python imports passed")'
+Python imports passed
++ <isolated-test-workspace>/recovery-kit-test-20261109/venv/bin/python -m unittest discover -s tests -p test_bssn_boundaries.py -v
+test_all_ghost_values_zero_and_interior_unchanged (test_bssn_boundaries.ConstraintGhostTests.test_all_ghost_values_zero_and_interior_unchanged) ... ok
+test_lapse_characteristic_speed_is_preserved (test_bssn_boundaries.SommerfeldTests.test_lapse_characteristic_speed_is_preserved) ... ok
+test_outgoing_radial_field (test_bssn_boundaries.SommerfeldTests.test_outgoing_radial_field)
+u-u_inf=F(|r|-v*t)/|r|^n obeys the same outgoing law at both ends. ... ok
+test_positive_domain_leaves_left_boundary_untouched (test_bssn_boundaries.SommerfeldTests.test_positive_domain_leaves_left_boundary_untouched) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.665s
+
+OK
+Grid1D: nx=22, xmin=-10.5, xmax=10.5, dx=1.0, ng=3 cell_centered=True
+
+Recovery completed. Activate explicitly: source <isolated-test-workspace>/recovery-kit-test-20261109/activate.sh
+Verification report: <isolated-test-workspace>/recovery-kit-test-20261109/logs/verification-20261109T193916.673025Z.json

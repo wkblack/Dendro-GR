@@ -1,0 +1,22 @@
+Nt = 400
+Nx = 800
+Xmin = -20.0
+Xmax = 20.0
+NGhost = 3
+cfl = 0.1
+eta = 2.0
+D1 = "E642"
+D2 = "E642"
+BHMask = false
+Mass = 1.0
+collapsed_lapse = true
+initial_data = "Puncture"
+output_dir = "smoke-output"
+output_interval = 400
+print_interval = 100
+bhmask_outer_radius = 15.0
+[[filters]]
+type = "KO6"
+apply = "Rhs"
+sigma = 0.5
+filter_boundary = false
