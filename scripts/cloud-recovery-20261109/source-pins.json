@@ -1,0 +1,22 @@
+{
+  "Dendro-GR": {
+    "url": "https://github.com/dfvankomen/Dendro-GR.git",
+    "commit": "d00a675aa6a379d91a5ab0329a2088420d7d19dd"
+  },
+  "Dendro-5.01": {
+    "url": "https://github.com/dfvankomen/Dendro-5.01",
+    "commit": "0e6198bf4cae3307a59b4c4a0037ee44979fec2f"
+  },
+  "libxsmm": {
+    "url": "https://github.com/libxsmm/libxsmm.git",
+    "commit": "0c2fae61b79da495eb560e6eb29f60fd9024fec1"
+  },
+  "spdlog": {
+    "url": "https://github.com/gabime/spdlog.git",
+    "commit": "27cb4c76708608465c413f6d0e6b8d99a4d84302"
+  },
+  "toml11": {
+    "url": "https://github.com/ToruNiina/toml11",
+    "commit": "be08ba2be2a964edcdb3d3e3ea8d100abc26f286"
+  }
+}

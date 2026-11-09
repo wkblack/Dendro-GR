@@ -1,0 +1,13 @@
+cmake-data	3.31.6-2
+cmake	3.31.6-2
+gfortran-14-x86-64-linux-gnu	14.2.0-19
+libblas-dev	3.12.1-6
+libgfortran-14-dev	14.2.0-19
+libgfortran5	14.2.0-19
+libgsl-dev	2.8+dfsg-5
+libgsl28	2.8+dfsg-5
+libgslcblas0	2.8+dfsg-5
+liblapack-dev	3.12.1-6
+libopenmpi-dev	5.0.7-1
+librhash1	1.4.5-1
+libuv1t64	1.50.0-2
